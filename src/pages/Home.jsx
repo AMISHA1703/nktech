@@ -10,10 +10,10 @@ const Home = () => {
     <div>
         <HeroSection/>
         <WhoAreWe/>
+        <ServicesSection/>
         <ClientsCarousel/>
         <Testimonials/>
         <AwardsAchievements/>
-        <ServicesSection/>
 
     </div>
   )

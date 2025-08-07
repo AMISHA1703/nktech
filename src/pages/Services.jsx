@@ -1,9 +1,22 @@
-import React from 'react'
+import React from "react";
+import { Outlet, Link } from "react-router-dom";
+import ServiceCard from "../components/ServiceCard";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <div>
+      <ServiceCard title="Seo" description="jzzzzzzzzz" />
+      <ServiceCard title="Digital Marketing" description="zbbbbbbbb" />
 
-export default Services
+      <nav>
+        <Link to="DigitalMarketing">DigitalMarketing</Link>
+        <br />
+        <Link to="Seo">Seo</Link>
+      </nav>
+
+      <Outlet/>
+    </div>
+  );
+};
+
+export default Services;
