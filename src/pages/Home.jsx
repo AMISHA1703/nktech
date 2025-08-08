@@ -5,11 +5,15 @@ import Testimonials from '../components/Testimonials.jsx'
 import AwardsAchievements from "../components/AwardsAchievements.jsx"
 import ClientsCarousel from "../components/ClientsCarousel.jsx"
 import ServicesSection from "../components/ServicesSection .jsx"
+import Offer from "../components/Offer.jsx";
+// import Quality from '../components/Quality.jsx'
+
 const Home = () => {
   return (
     <div>
         <HeroSection/>
         <WhoAreWe/>
+         <Offer/>
         <ServicesSection/>
         <ClientsCarousel/>
         <Testimonials/>
