@@ -1,9 +1,11 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {  Routes, Route } from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import About from "./pages/AboutUs.jsx";
 import Services from "./pages/services/Services.jsx";
 import Navbar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+
+import ServicesSection from "./components/ServicesSection .jsx"
 
 // Digital Marketing Pages
 import DigitalMarketing from "./pages/services/DigitalMarketing/DigitalMarketing.jsx";
@@ -36,14 +38,17 @@ import AustraliaContact from "./pages/contacts/AustraliaContacts.jsx";
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />}>
+         <Route path="digitalmarketing/:key" element={<ServicesSection />} />
+
           {/* Digital Marketing */}
           <Route path="digitalmarketing" element={<DigitalMarketing />} />
+
           <Route path="digitalmarketing/aeoservices" element={<AEOServices />} />
           <Route path="digitalmarketing/seoservices" element={<SeoServices />} />
           <Route path="digitalmarketing/ormservices" element={<ORMServices />} />
@@ -73,7 +78,7 @@ function App() {
         <Route path="/contact/australia" element={<AustraliaContact />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
