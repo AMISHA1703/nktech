@@ -29,6 +29,7 @@ import SoftwareDevelopment from "./pages/services/SoftwareDevelopment.jsx";
 import ContentWriting from "./pages/services/ContentWriting.jsx";
 import GraphicDesigning from "./pages/services/GraphicDesigning.jsx";
 import PoliticalCampaignManagement from "./pages/services/PoliticalCampaignManagement.jsx";
+import SoftwareAndApps  from ".//pages/SoftwareApps.jsx"
 
 // Contact Subpages
 import Contact from "./pages/contacts/ContactUs.jsx"
@@ -66,6 +67,8 @@ function App() {
           {/* Other Services */}
           <Route path="mobiledevelopment" element={<MobileDevelopment />} />
           <Route path="softwaredevelopment" element={<SoftwareDevelopment />} />
+
+        
           <Route path="contentwriting" element={<ContentWriting />} />
           <Route path="graphicdesign" element={<GraphicDesigning />} />
           <Route path="politicalcampaignmanagement" element={<PoliticalCampaignManagement />} />
@@ -76,6 +79,9 @@ function App() {
         <Route path="/contact/noida" element={<NoidaContact />} />
         <Route path="/contact/gurugram" element={<GurugramContact />} />
         <Route path="/contact/australia" element={<AustraliaContact />} />
+
+        {/*software and apps*/}
+        <Route path="/softwareandapps" element={<SoftwareAndApps />} />
       </Routes>
       <Footer />
     </>

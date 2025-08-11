@@ -43,7 +43,7 @@ export const menuItems = [
   },
   {
     label: "Software & Apps",
-    to: "/shop",
+    to: "/softwareandapps",
   },
   {
     label: "Portfolio",
