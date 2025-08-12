@@ -8,7 +8,7 @@ import ServicesSection from "../components/ServicesSection .jsx"
 import Offer from "../components/Offer.jsx";
 import  Productlist from "../pages/Products/Productlist.jsx"
 import SoftwareAndApps from "../pages/SoftwareApps.jsx"
-// import Quality from '../components/Quality.jsx'
+import Quality from '../components/Quality.jsx'
 
 const Home = () => {
   return (
@@ -16,12 +16,11 @@ const Home = () => {
         <HeroSection/>
         <WhoAreWe/>
          <Offer/>
+        <Quality/>
         <ServicesSection/>
         <ClientsCarousel/>
         <Testimonials/>
         <AwardsAchievements/>
-         {/* <Productlist/> */}
-         {/* <SoftwareAndApps/> */}
     </div>
   )
 }
